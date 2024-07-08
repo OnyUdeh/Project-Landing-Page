@@ -1,13 +1,13 @@
-body{
-    display: flex;
-    flex-direction: column;
+*{
+    margin: 0;
+    border: 0;
 }
 
 header{
+    display: flex;
     background-color: #1F2937;
     color: white;
-    display: flex;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -18,7 +18,7 @@ nav{
     padding: 0.5em;
     justify-content: space-between;
     width: 100%;
-    
+    padding: 1em 20%;
 }
 
 .logo{
@@ -27,28 +27,238 @@ nav{
 }
 
 ul{
-    list-style-type: none;
     display:flex;
+    list-style-type: none;
     flex-direction: row;
     justify-content: space-between;
-    gap:10px
+    gap:20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
 }
 
-.welcome{
-    background-color: #1F2937;
-    color: white;
-    display: flex;
-    width: auto;
+
+section{
     height: auto;
     display: flex;
 }
 
+
+.welcome{
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    width:100%;
+    height: 100%;
+    background-color: #1F2937;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left{
+    display: flex;
+    max-width: 34%;
+    flex-direction: column;
+}
 .right{
-    height: 100px;
-    width: 150px;
-    border: 1px solid white;
+    display: flex;
+    max-width: 30%;
+    height: fit-content;
+    
+}
+
+h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    max-width: 70%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+p{
+    margin-top: 0.1em;
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+button{
+    display: flex;
+    font-size: 1em;
+    font-weight:900;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 9px;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    width:fit-content
+    
 }
 
 .website-img{
-    
+    display: flex;
+    width:100%; height:100%;
+    object-fit: contain;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 100px;
+    gap:1em;
+}
+
+h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.box{
+    border:3px solid #3882F6;
+    height: 150px;
+    width: 170px;
+    min-height: 150px;
+    min-width: 170px;
+    border-radius: 9px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.quotebox{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E5E7EB;
+    height: 150px;
+    padding: 100px 600px;
+}
+
+.quote{
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    font-variation-settings:
+      "slnt" 0;
+
+}
+
+.quoter{
+    font-size: 24px;
+    color: #1F2937;
+    float:right;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.callcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.bluebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width:1000px;
+    background-color: #3882F6;
+    padding: 20px;
+    border-radius: 4px;
+    justify-content: space-around;
+}
+
+.leftb{
+    display: block;
+    color: white;
+    gap:0.5em;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.calltext{
+    display: flex;
+    display: block;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.callsubtext{
+    display: block;
+    font-weight: 300;
+}
+
+.btn2{
+    display: flex;
+    font-size: 1em;
+    font-weight:900;
+    color: white;
+    background-color: #3882F6;
+    border:1px solid white;
+    border-radius: 9px;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    width:fit-content
+}
+
+footer{
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
 }
